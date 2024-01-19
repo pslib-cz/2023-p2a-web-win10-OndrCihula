@@ -1,32 +1,43 @@
 .start-panel {
-
+    display: grid;
+    grid-template-columns: 50px 170px 850px;
+    z-index: -1.53;
 }
 .start-panel__icons {
-
+    display: grid;
+    grid-template-rows: 350px 50px 50px 50px 50px 50px 50px /*repeat(7, 50px)*/;
 }
 .start-panel__grid {
-
+    display: grid;
+    grid-template-areas:
+        "apps--office apps--other"
+        "apps--web apps--other";
+    grid-auto-rows: br;
 }
 .apps--office {
-
+    display: grid;
 }
 .apps--web {
-
+    display: grid;
 }
 .apps--other {
-
+    display: grid;
 }
 .apps__grid {
-
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    grid-template-rows: repeat(6, 50px);
+    gap: 5px
 }
 .app--g2x2 {
-
+    grid-column: span 2;
+    grid-row: span 2;
 }
 .app--g2x1 {
-
+    grid-row: span 2;
 }
 .app--g1x2 {
-
+    grid-column: span 2;
 }
 .app--off-3 {
 
